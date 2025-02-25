@@ -86,3 +86,45 @@
 # # Доп.контент
 
 # animals = [Dog(), Cat(), Bird()]
+
+# # Инкапсуляция
+
+# class BankAccount:
+#     def __init__(self, balance):
+#         self.__balance = balance
+        
+#     def deposit(self, amount):
+#         if amount > 0:
+#             self.__balance += amount
+#             return True
+#         return False
+    
+#     def withdraw(self, amount):
+#         if 0 < amount <= self.__balance:
+#             self.__balance -= amount
+#             return True
+#         return False
+        
+        
+#     def get_balance(self):
+#         return self.__balance
+    
+# account = BankAccount(200)
+# account.deposit(100)
+# print(account.get_balance())
+# account.withdraw(50)
+# print(account.get_balance())
+# # print(account.__balance)         <== ощибка(я кобы нет)
+
+# # Задача (дорешать)
+
+# class Rectangle:
+#     def __init__(self, w, h):
+#         self.__w = w
+#         self.__h = h
+        
+#     def s_math(self):
+#         pass
+    
+#     def p_math(self):
+#         pass
