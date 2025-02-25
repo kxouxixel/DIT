@@ -118,13 +118,18 @@
 
 # # Задача (дорешать)
 
-# class Rectangle:
-#     def __init__(self, w, h):
-#         self.__w = w
-#         self.__h = h
+class Rectangle:
+    def __init__(self, w, h):
+        self.__w = w
+        self.__h = h
         
-#     def s_math(self):
-#         pass
+    def s_math(self):
+        return f"{self.__w * self.__h}"
     
-#     def p_math(self):
-#         pass
+    def p_math(self):
+        return f"{self.__w + self.__h + self.__w + self.__h}"
+    
+Rect1 = Rectangle(3, 8)
+print(Rect1.s_math())
+print(Rect1.p_math())
+print(Rect1.__h)
