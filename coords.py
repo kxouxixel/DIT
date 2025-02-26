@@ -1,5 +1,4 @@
-def coords():
-    x, y = int(input('Напишите координаты: '))    
+def coords(x, y):   
     if x >= 1:
         if y >= 1:
             print('I')
@@ -14,4 +13,4 @@ def coords():
             print('II')
 
 
-coords()
+coords(-100, 100)
