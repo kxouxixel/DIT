@@ -116,20 +116,66 @@
 # print(account.get_balance())
 # # print(account.__balance)         <== ощибка(я кобы нет)
 
-# # Задача (дорешать)
+# # Задача (+)
 
-class Rectangle:
-    def __init__(self, w, h):
-        self.__w = w
-        self.__h = h
+# class Rectangle:
+#     def __init__(self, w, h):
+#         self.__w = w
+#         self.__h = h
         
-    def s_math(self):
-        return f"{self.__w * self.__h}"
+#     def s_math(self):
+#         return f"{self.__w * self.__h}"
     
-    def p_math(self):
-        return f"{self.__w + self.__h + self.__w + self.__h}"
+#     def p_math(self):
+#         return f"{self.__w + self.__h + self.__w + self.__h}"
     
-Rect1 = Rectangle(3, 8)
-print(Rect1.s_math())
-print(Rect1.p_math())
-print(Rect1.__h)
+# Rect1 = Rectangle(3, 8)
+# print(Rect1.s_math())
+# print(Rect1.p_math())
+
+# # 2-ой урок классов ооп
+
+# # Задача на флекс :)))
+
+# import pygame as pg
+# import random
+
+# W, H, FPS = 600, 600, 120
+# pg.init()
+# win = pg.display.set_mode((W, H))
+
+# def load_img(name):
+#     img = pg.image.load(name)
+#     img = img.convert()
+#     colorkey = img.get_at((0, 0))
+#     img.set_colorkey(colorkey)
+#     return img
+
+# class Inginirium(pg.sprite.Sprite):
+    
+#     def __init__(self, *group):
+#         super().__init__(*group)
+#         self.image = load_img('sonic2.png')
+#         self.image = pg.transform.scale(self.image, (100, 100))
+#         self.rect = self.image.get_rect()
+#         self.rect.x = random.randrange(W)
+#         self.rect.y = random.randrange(H)
+       
+#     def update(self):
+#         self.rect = self.rect.move(random.randrange(3) - 1, random.randrange(3) - 1)
+        
+# all_sprites = pg.sprite.Group()
+    
+# for i in range(50):
+#     Inginirium(all_sprites)
+        
+        
+# while True:
+#     for i in pg.event.get():
+#         if i.type == pg.QUIT:
+#             exit()
+        
+#     all_sprites.update()
+#     win.fill((255, 255, 255))
+#     all_sprites.draw(win)
+#     pg.display.update()  
